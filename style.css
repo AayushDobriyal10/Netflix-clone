@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+html,body{
+  overflow-x: hidden;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(assets/Images/background.jpg);
+  height: 100vh;
+  position: relative;
+  background-position: center center;
+  background-size: max(900px, 100vw);
+}
+.box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.7;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+#logo {
+  color: red;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 77vw;
+  margin: auto;
+  height: 90px;
+}
+nav img,
+.buttons {
+  color: red;
+  position: relative;
+  z-index: 10;
+}
+@media only screen and (max-width : 450px) {
+  .buttons{
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.bgtext {
+  font-family: "Poppins", sans-serif;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  z-index: 10;
+  gap: 10px;
+  padding: 15px;
+}
+.bgtext > :first-child {
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: center;
+}
+.bgtext > :nth-child(2) {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+.bgtext > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.line {
+  background-color: rgb(66, 66, 66);
+  width: 100%;
+  height: 10px;
+}
+
+.btn {
+  font-family: "Poppins";
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.lang {
+  padding-right: 10px;
+  margin: 10px;
+  color: white;
+}
+.btn-sn {
+  background-color: red;
+  color: white;
+  font-size: 14px;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  width: 200px;
+  height: 59px;
+  font-size: 20px;
+}
+.btn-text {
+  width: 350px;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+}
+.lang,
+.btn-text {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0.1px solid white;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .login {
+    flex-direction: column;
+  }
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+  color: white;
+  font-family: "Poppins";
+}
+@media only screen and (max-width:1150px) {
+  .first{
+    flex-wrap: wrap;
+  }
+}
+.secimage {
+  position: relative;
+}
+.secimage img {
+  width: 440px;
+  position: relative;
+  z-index: 10;
+}
+.secimage video {
+  position: absolute;
+  width: 440px;
+  top: 90px;
+  right: 0;
+}
+section.first>div{
+  padding: 34px 0;
+  display: flex;
+  flex-direction: column;
+}
+section.first> div :nth-child(1) {
+  font-size: 46px;
+  font-weight: bolder;
+
+}
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+.faq{
+  margin: 10px;
+}
+.faq h2{
+  font-family: 'Poppins';
+  font-weight: bolder;
+  font-size: 44px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+.faqbox{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(47, 47, 47);
+  padding: 25px;
+  color: white;
+  max-width: 70vw;
+  margin: 10px auto;
+  font-family: 'Poppins';
+  font-size: 22px;
+}
+.faqbox:hover{
+  background-color: rgb(63, 62, 62);
+}
+.signup{
+  color: white;
+  font-family: 'Poppins';
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+.login2{
+  padding-bottom: 50px;
+}
+footer{
+  color: white;
+  max-width: 70vw;
+  margin: auto;
+  padding: 15px;
+}
+footer .questions{
+  padding: 40px 0;
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer a{
+  color: white;
+  font-size: 14px;
+
+
+}
+@media only screen and (max-width : 800px) {
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+  }
+}
